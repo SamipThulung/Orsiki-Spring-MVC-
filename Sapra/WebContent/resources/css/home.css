@@ -1,0 +1,188 @@
+@CHARSET "UTF-8";
+
+
+/*For the category*/
+
+body{
+  display: block;
+}
+.navtala{
+  margin: 4px;
+  width: 100%;
+  height: 80%;
+}
+table{
+  border-bottom-right-radius: 30px;
+  float: left;
+
+}
+
+.table1{
+  width: 20%;
+}
+
+.table2{
+  width: 50%;
+}
+.table3{
+  width: 25%;
+}
+
+.lastcategory{
+
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+table tr td a {
+  padding: 2px 70px;
+
+}
+table tr td:hover{
+  color: orange;
+}
+
+table tr td ul{
+  position: absolute; 
+  list-style: none;
+  display: none;
+  margin-top: -19px;
+  margin-left: 110px;
+  border: 1px solid black;
+  padding-left: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+table tr td ul li{
+  padding: 20px 0px;
+  border-bottom: 1px solid black;
+}
+table tr td ul li a{
+  text-decoration: none;
+}
+table tr td ul li:hover > a{
+  color: orange;
+}
+
+table tr td img{
+  width: 100%;
+}
+
+td:hover > ul{
+  display: inherit;
+}
+
+th{
+  padding: 25px 20px;
+  border-bottom: 1px solid black;
+  background-color: #65707f;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+td{
+  padding: 20px 50px;
+
+}
+tr:nth-child(even) {background: #FFFFFF;
+}
+tr:nth-child(odd) {background:  #f6f9fb;}
+
+.tableimg{
+  padding: 0;
+  border: 3px solid black;
+  border-bottom-left-radius: 15px;
+}
+
+
+
+
+/*for IPads*/
+@media only screen and (max-width: 1024px) {
+ 
+  .navtala{
+    width: 700px;
+     height: 40%;
+    
+
+  }
+  .table1{
+    display: none;
+    width: 0px;
+  }
+  .table3{
+    display: none;
+    width: 0px;
+  }
+  .table2{
+    padding: 30px 60px;
+    width: 1024px;
+   
+  }
+  
+ 
+}
+
+
+
+/*For the carouse;*/
+.carousel{
+  display: inline-block;
+  margin: 20px;
+clear:both;
+  position: absolute;
+  border: 1px solid green;
+  border-radius: 15px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+.container{
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.carousel .container .btn{
+  position: relative;
+  margin-top:200px;
+  margin-left: -305px;
+  margin-right: -290px;
+  padding: 10px 132px;
+  border-radius: 20px;
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+    
+  
+
+}
+
+.carousel .container .btn:hover{
+  background-color: green;
+  color: white;
+
+}
+
+.carousel div img{
+  height: 240px;
+  width: 300px;
+  margin-left:-25px;
+
+}
+
+
+#firstitem{
+  margin-left: -130px;
+}
+
+/*The product Description*/
+.description{
+  width: 150%;
+  background-color:rgba(0,100,0,0.1);
+  padding: 1px 18px;
+  overflow: inherit;
+}

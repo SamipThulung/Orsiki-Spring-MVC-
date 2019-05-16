@@ -1,0 +1,38 @@
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 40px;
+}
+.menu-items {
+  display: inline-block;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+  
+}
+
+input[type=submit] {
+    width: 5em; 
+}
+
+#main{
+	padding: 1em 0 0 30%;
+}
+#desc{
+	height:20em;
+	width:20em;
+}

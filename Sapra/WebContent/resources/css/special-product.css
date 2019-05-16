@@ -1,0 +1,49 @@
+.special{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.special .special-image{
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.special .special-image img{
+	width: 100%;
+}
+
+.special .special-image .special-caption{
+	position: absolute;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+	background: #03A9F4;
+	background: var(--accent-color);
+	top:0;
+	left: 0;
+	bottom:5px;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	padding: 0;
+	padding-top: 18%;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.special .special-image:hover .special-caption{
+	visibility: visible;
+	opacity: 0.9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	padding-top: 16%;
+}

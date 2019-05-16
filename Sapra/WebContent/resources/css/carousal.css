@@ -1,0 +1,226 @@
+.shop{
+	margin-top:20px;
+	padding:20px;
+	margin-bottom: 10px;
+}
+
+.carousal{
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.carousal .controller .scroll-lt, .carousal .controller .scroll-rt{
+	position: absolute;
+	top: 45%;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	height: auto;
+	padding: 10px 15px;
+	background: #03A9F4;
+	background: var(--accent-color);
+	opacity: 0.8;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	cursor: pointer;
+	z-index: 5;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+} 
+
+.carousal .controller .scroll-lt{
+	left: 1px;
+}
+
+.carousal .controller .scroll-rt{
+	right: 1px;
+}
+
+.carousal .title{
+	background: #03A9F4;
+	background: var(--accent-color);
+	color: #FFFFFF;
+	color: var(--white-text);
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.carousal .product-list{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background: #EFEFEF;
+	border: 2px solid #DDDDDD;
+	overflow-x: hidden;
+}
+
+.carousal .product-list .product{
+	position: relative;
+	margin: 10px 10px 10px 15px;
+	background: #C5CAE9;
+	background: var(--light-primary-color);
+	min-width: 210px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px 2px #BDBDBD;
+	        box-shadow: 1px 1px 2px 2px #BDBDBD;
+	        -webkit-box-shadow: 1px 1px 2px 2px var(--border-color);
+	                box-shadow: 1px 1px 2px 2px var(--border-color);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	width: 210px;
+}
+
+.carousal .product-list .product:hover{
+	-webkit-box-shadow: 2px 2px 10px 8px #BDBDBD;
+	        box-shadow: 2px 2px 10px 8px #BDBDBD;
+	        -webkit-box-shadow: 2px 2px 10px 8px var(--border-color);
+	                box-shadow: 2px 2px 10px 8px var(--border-color);
+}
+
+.carousal .product-list .product .image-holder{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.carousal .product-list .product .image-holder img{
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+
+.carousal .product-list .product:hover .image-holder img{
+	-webkit-transform: scale(1.2);
+	        -ms-transform: scale(1.2);
+	    transform: scale(1.2);
+	-webkit-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	transition: all 3s ease-out;
+}
+
+.carousal .product-list .product .name{
+	color: #212121;
+	color: var(--primary-text-color);
+	font-weight: 700;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 5px 0 5px 5px;
+	margin: 0;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.carousal .product-list .product .price{
+	padding: 2px 0 2px 5px;
+	margin: 0;
+	display: inline-block;
+}
+
+.carousal .product-list .product .price .discount{
+	display: inline-block;
+	font-size: 0.8em;
+	color: #757575;
+	color: var(--secondary-text-color);
+	text-decoration: line-through;
+	margin-left: 5px;
+}
+
+.carousal .product-list .product p.hearted{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right:10px;
+	color: red;
+}
+
+.carousal .product-list .product p.sale, .carousal .product-list .product p.limited{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	padding: 2px 1px 2px 1px;
+	background: lightgreen;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+
+.carousal .product-list .product p.limited{
+	top: 25px;
+	background: lightblue;
+}
+
+/*RESPONSIVE CAROUSAL*/
+@media screen and (max-width: 1075px){
+	.carousal .product-list .product{
+		width: 150px;
+		min-width: 150px;
+	}
+	
+	.carousal .product-list .product .image-holder{
+		width: 140px;
+		height: 160px;
+	}
+	
+	.carousal .product-list .product{
+		font-size: 0.6rem;
+	}
+	
+	.carousal .controller .scroll-lt, .carousal .controller .scroll-rt{
+		padding: 5px 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.carousal .product-list{
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        -ms-grid-row-align: center;
+		    align-items: center;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		max-height: 600px;
+		flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-flow: column wrap; 
+			-ms-flex-flow: row; /*IE Does not Column Wrap to 2 Columns so, do 1 row as wide screen, Damn.*/
+	}
+}
+
+@media screen and (max-width: 450px){
+	.carousal .product-list .product {
+		width: 110px;
+		min-width: 110px;
+	}
+	
+	.carousal .product-list .product .image-holder {
+		width: 100px;
+		height: 125px;
+	}
+	
+	.carousal .product-list{
+		max-height: 400px;
+	}
+}

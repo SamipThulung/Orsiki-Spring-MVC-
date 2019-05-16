@@ -1,0 +1,239 @@
+
+.w3-content{max-width:100%;margin:auto}.
+
+.w3-section{margin-top:16px!important;margin-bottom:16px!important}
+
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.easyzoom{
+	position:relative;
+	}
+.easyzoom .magnifier{
+	box-sizing:border-box;
+	border:1px solid #999;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	display:none;
+	cursor:move;
+	}
+.easyzoom .small,.easyzoom .big{
+	position:absolute;
+	border:1px solid #aaa;
+	}
+.easyzoom .small{
+	top:0;
+	left:0;
+	cursor:move;
+	}
+.easyzoom .big{
+	overflow:hidden;
+	display:none;
+	}
+.easyzoom .small img,.easyzoom .big img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#productImage1{
+	display: block;
+
+
+}
+
+#productImage2{
+	display: none;
+}
+
+#productImage3{
+	display: none;
+}
+
+.sliderBelow{
+	width: 120px;
+	height: 90px;
+	padding-top: 4px;
+
+}
+
+#productDetails{
+	margin-left: 37%;border: 1px solid black; margin-right: 31%;color: black;
+	padding: 20px;
+
+}
+
+.menuImageContainer{
+	clear: left; 
+	margin-top: 10%; 
+	border:1px solid red;
+	width: 31%; 
+	margin-left: 30px;
+}
+
+
+
+
+/*body*/
+
+.middleBody{
+	
+	
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0 40px 0;
+	background-color: #F5FAFA;
+	border-bottom-left-radius: -15px;
+	border-bottom-right-radius: -15px;
+}
+
+
+/*For footer*/
+
+footer{
+
+	
+
+
+
+}
+
+.companyfooter a {
+	text-decoration: none;
+
+}
+.companyfooter a:hover .brandname{
+	color: maroon;
+}
+
+.firsthalf{
+	
+	padding-top: 10px;
+	padding-left: 15px;
+	background-color: 	#221E1D;
+	height: 250px;
+	
+	
+}
+.middlehalf{
+
+	background-color: #2F4F4F;
+}
+.lasthalf{
+
+	background-color: black;
+}
+
+
+
+.brandname{
+    margin: 0px;
+	padding-left: 60px; 
+	font-family:Brush Script MT, Brush Script Std, cursive;
+	font-size: 50px;
+	 color: red;
+	 text-decoration: none;
+
+}
+
+.footertable{
+	float: left;
+	
+}
+
+
+.footertable h3{
+	
+	font-size: 16px;
+
+	color: #E9633B;
+
+	background-color: #221E1D;
+
+	padding: 14px 30px;
+	
+
+
+}
+
+
+.footertable ul{
+	list-style-type: none;
+	padding-left: 20%;
+}
+.footertable ul li a{
+	
+	font-style: italic;
+
+	color:white;
+	font-family: Comic Sans MS;
+	font-size: 13px;
+}
+
+.footertable ul li a:hover{
+	color: lightgrey;
+}
+
+
+
+.lasthalf{
+	height: 60px;
+	margin-top: -25px;
+	border-bottom-left-radius: 11px;
+	border-bottom-right-radius: 11px;
+}
+
+.rightslinks{
+	color: beige;
+	padding-top: 17px;
+}
+
+.rightslinks a{
+	margin-top: 1000px;
+	display: inline;
+	color: white;
+	font-family: Comic Sans MS;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 12px;
+
+}
+.rightslinks a:hover {
+	color: #D3D3D3;
+}
+
+.socialmedia{
+	display: inline;
+	float: right;
+	margin-top: -25px;
+
+}
+
+.socialmedia a img{
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 375px){
+
+	.menuImageContainer{
+		clear: left; 
+		margin-top: 200px; 
+		border:1px solid red;
+		width: 40%; 
+		margin-left: 30px;
+	}
+	#productDetails{
+		margin-left: 48%;
+		margin-right: 10%;
+	}
+	.footertable ul{
+		padding: 0;
+	}
+	.footertable h3{
+		padding:  14px 12px;
+	}
+}
+
+

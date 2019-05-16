@@ -1,0 +1,39 @@
+:root{
+	/*Light Indego*/
+	--primary-color: #3F51B5;
+	/*Dark Indego*/
+	--dark-primary-color: #303F9F;
+	/*Grey Shade*/
+	--light-primary-color: #C5CAE9;
+	/*Sky Blue*/
+	--accent-color: #03A9F4;
+	
+	/*Matte Black*/
+	--primary-text-color: #212121;
+	/*Grey Dark*/
+	--secondary-text-color: #757575;
+	--white-text: #FFFFFF;
+	--white-shade-text: #CCCCCC;
+	
+	/*Grey Light*/
+	--border-color: #BDBDBD;
+	
+	--primary-font: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.hidden{
+	display:none;
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+body,html{
+	padding:0;
+	margin:0;
+	font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-family: var(--primary-font);
+}
+
+.overflown-off{
+	overflow: hidden;
+}

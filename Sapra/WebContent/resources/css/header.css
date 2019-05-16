@@ -1,0 +1,351 @@
+/*Search Header CSS*/
+header{
+	position: relative;
+	margin-top: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 5px 30px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	background: #eeeeee;
+	border-bottom: 2px solid #BDBDBD;
+	border-bottom: 2px solid var(--border-color);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+header .logo{
+	position: relative;
+}
+
+header .logo img{
+	height: 80px;
+}
+
+header .logo span{
+	font-family: Courier;
+	font-size:20px;
+	color: #03A9F4;
+	color: var(--accent-color);
+	font-weight:700;
+	position: relative;
+	display: inherit;
+	top: -5px;
+}
+
+header .mobsearch{
+	display:none;
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility:hidden;
+	font-size: 1.6em;
+	cursor: pointer;
+}
+
+header .mobsearch:hover{
+	color: #757575;
+	color: var(--secondary-text-color);
+}
+
+header .mobsearch input{
+	display:none;
+	visibility:hidden;
+}
+
+header .search-container{
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	/* -webkit-box-flex: 0.4;
+	    -ms-flex-positive: 0.4;
+	        flex-grow: 0.4; */
+	width: 50%;
+	text-align: center;
+}
+
+header .search-container form .search{
+	border-radius: 5px 0 0 5px;
+	background: #cccccc;
+	/* padding: 10px; */
+	padding-left: 10px;
+	height: 40px;
+	width: 60%;
+	border: 2px solid black;
+	outline: none;
+	font-family: var(--primary-font);
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+header .search-container form select{
+	/* padding: 10px 0 10px 5px; */
+	padding-left: 10px;
+	height: 40px;
+	margin-left: -4px;
+	outline: none;
+	border: 2px solid black;
+	border-radius: 0;
+	border-left: none;
+	/* appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none; */
+	background-color: #C5CAE9;
+	background-color: var(--light-primary-color);
+	/*background-image: url("../images/arrow.png");
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 87px;*/
+	font-family: var(--primary-font);
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+header .search-container form .search-button{
+	border-radius: 0 5px 5px 0;
+	height: 40px;
+	margin-left: -4px;
+	outline:none;
+	border:1px solid black;
+	background: #3F51B5;
+	background: var(--primary-color);
+	color: white;
+	font-weight: 700;
+	font-family: var(--primary-font);
+	-webkit-box-shadow: 1px 1px 2px 0 #757575;
+	        box-shadow: 1px 1px 2px 0 #757575;
+	        -webkit-box-shadow: 1px 1px 2px 0 var(--secondary-text-color);
+	                box-shadow: 1px 1px 2px 0 var(--secondary-text-color);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+header .search-container form .search:hover, header .search-container form .search:hover ~ select{
+	-webkit-box-shadow: 1px 2px 5px 1px #757575;
+	        box-shadow: 1px 2px 5px 1px #757575;
+	        -webkit-box-shadow: 1px 2px 5px 1px var(--secondary-text-color);
+	                box-shadow: 1px 2px 5px 1px var(--secondary-text-color);
+}
+
+header .search-container form .search:focus, header .search-container form .search:focus ~ select{
+	-webkit-box-shadow: 1px 2px 10px 2px #757575;
+	        box-shadow: 1px 2px 10px 2px #757575;
+	        -webkit-box-shadow: 1px 2px 10px 2px var(--secondary-text-color);
+	                box-shadow: 1px 2px 10px 2px var(--secondary-text-color);
+}
+
+header .search-container form .search-button:hover{
+	-webkit-box-shadow: 1px 2px 10px 2px #757575;
+	        box-shadow: 1px 2px 10px 2px #757575;
+	        -webkit-box-shadow: 1px 2px 10px 2px var(--secondary-text-color);
+	                box-shadow: 1px 2px 10px 2px var(--secondary-text-color);
+}
+
+header .search-container form .search-button:active{
+	-webkit-box-shadow: 0 0 0 0 #757575;
+	        box-shadow: 0 0 0 0 #757575;
+	        -webkit-box-shadow: 0 0 0 0 var(--secondary-text-color);
+	                box-shadow: 0 0 0 0 var(--secondary-text-color);
+}
+
+/*WISH BUTTON*/
+header .wishbtn{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 3px 10px;
+}
+
+header .wishbtn a:hover{
+	color: #757575;
+	color: var(--secondary-text-color);
+}
+
+/*LOLLY COIN*/
+header .lolly{
+	background: orange;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+	text-align: center;
+	border: 3px solid black;
+	border: 3px solid var(--secondary-text-color);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+header .lolly span{
+	display: block;
+    margin-top: 12px;
+}
+
+header .lolly i{
+	position: absolute;
+	display: inline;
+	bottom: -8px;
+	left:0;
+	color:var(--secondary-text-color);
+	-webkit-transition: all 0.5s 0.1s ease;
+	-o-transition: all 0.5s 0.1s ease;
+	transition: all 0.5s 0.1s ease;
+}
+
+header .lolly:hover{
+	-webkit-transform: translate(0,-5px) scale(1.05);
+	        -ms-transform: translate(0,-5px) scale(1.05);
+	    transform: translate(0,-5px) scale(1.05);
+	-webkit-box-shadow: 0 2px 10px 1px #757575;
+	        box-shadow: 0 2px 10px 1px #757575;
+	        -webkit-box-shadow: 0 2px 10px 1px var(--secondary-text-color);
+	                box-shadow: 0 2px 10px 1px var(--secondary-text-color);
+}
+
+header .lolly:hover > i{
+	margin-top: -30px;
+	font-size: 3em;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/*CART*/
+header .cart i{
+	color: #757575;
+	color: var(--secondary-text-color);
+	font-size: 1.6em;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+header .cart:hover i{
+	-webkit-transform: translate(20px,0);
+	        -ms-transform: translate(20px,0);
+	    transform: translate(20px,0);
+}
+
+header .cart span{
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: inline-block;
+	color: #757575;
+	font-size: 1.5em;
+}
+
+header .cart:hover span{
+	-webkit-transform: translate(0,-22px) scale(1.1);
+	        -ms-transform: translate(0,-22px) scale(1.1);
+	    transform: translate(0,-22px) scale(1.1);
+}
+
+.searchShown{
+	opacity: 1 !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	height: 35px !important;
+	display: block !important;
+	visibility: visible !important;
+}
+
+/*Responsive Header Start*/
+@media screen and (max-width: 865px){
+	header .logo img{
+		height: 50px;
+	}
+	
+	header .logo span{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 832px){
+	
+	header{
+		padding: 2px 10px;
+	}
+	
+	header .mobsearch{
+		display:block;
+		opacity:1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		visibility:visible;
+	}
+	
+	header .wishbtn a{
+		padding: 3px 0;
+	}
+	
+	header .search-container{
+		-ms-flex-negative: 1;
+		    flex-shrink: 1;
+		/* NOTE: ABSOLUTE POSITION IS NOT GREAT CHOICE, LETS THINK */
+		position: fixed;
+		z-index: 7;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 5px 0;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+		height: 30px;
+		width: 100%;
+		background: #323232;
+		visibility: visible;
+		overflow: hidden;
+	}
+	
+	header .wishbtn{
+		padding: 3px;
+		font-size: 0.7em;
+	}
+	
+	header .lolly{
+		border: 2px solid #757575;
+		border: 2px solid var(--secondary-text-color);
+	}
+	
+	header .search-container form .search{
+		height: 30px;
+		width: 40%;
+	}
+	
+	header .search-container form select{
+		height: 30px;
+	}
+	
+	header .search-container form .search-button{
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	header{
+		margin-top: 75px;
+	}
+}
